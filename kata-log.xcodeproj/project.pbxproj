@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		50098E2824196397000685E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50098E2724196397000685E4 /* AppDelegate.swift */; };
 		50098E2A24196397000685E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50098E2924196397000685E4 /* SceneDelegate.swift */; };
-		50098E2C24196397000685E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50098E2B24196397000685E4 /* ViewController.swift */; };
-		50098E2F24196397000685E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50098E2D24196397000685E4 /* Main.storyboard */; };
+		50098E2C24196397000685E4 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50098E2B24196397000685E4 /* WelcomeViewController.swift */; };
 		50098E3124196398000685E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50098E3024196398000685E4 /* Assets.xcassets */; };
 		50098E3424196398000685E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50098E3224196398000685E4 /* LaunchScreen.storyboard */; };
 		50098E3F24196398000685E4 /* kata_logTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50098E3E24196398000685E4 /* kata_logTests.swift */; };
@@ -38,8 +37,7 @@
 		50098E2424196397000685E4 /* kata-log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kata-log.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50098E2724196397000685E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50098E2924196397000685E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		50098E2B24196397000685E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		50098E2E24196397000685E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50098E2B24196397000685E4 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		50098E3024196398000685E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50098E3324196398000685E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50098E3524196398000685E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,11 +99,8 @@
 			children = (
 				50098E2724196397000685E4 /* AppDelegate.swift */,
 				50098E2924196397000685E4 /* SceneDelegate.swift */,
-				50098E2B24196397000685E4 /* ViewController.swift */,
-				50098E2D24196397000685E4 /* Main.storyboard */,
-				50098E3024196398000685E4 /* Assets.xcassets */,
-				50098E3224196398000685E4 /* LaunchScreen.storyboard */,
-				50098E3524196398000685E4 /* Info.plist */,
+				50098E582419652F000685E4 /* Modules */,
+				50098E5724196450000685E4 /* Resources */,
 			);
 			path = "kata-log";
 			sourceTree = "<group>";
@@ -126,6 +121,24 @@
 				50098E4B24196398000685E4 /* Info.plist */,
 			);
 			path = "kata-logUITests";
+			sourceTree = "<group>";
+		};
+		50098E5724196450000685E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50098E3024196398000685E4 /* Assets.xcassets */,
+				50098E3224196398000685E4 /* LaunchScreen.storyboard */,
+				50098E3524196398000685E4 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		50098E582419652F000685E4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				50098E2B24196397000685E4 /* WelcomeViewController.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +247,6 @@
 			files = (
 				50098E3424196398000685E4 /* LaunchScreen.storyboard in Resources */,
 				50098E3124196398000685E4 /* Assets.xcassets in Resources */,
-				50098E2F24196397000685E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50098E2C24196397000685E4 /* ViewController.swift in Sources */,
+				50098E2C24196397000685E4 /* WelcomeViewController.swift in Sources */,
 				50098E2824196397000685E4 /* AppDelegate.swift in Sources */,
 				50098E2A24196397000685E4 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +309,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		50098E2D24196397000685E4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				50098E2E24196397000685E4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		50098E3224196398000685E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,7 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4CQPKLYWJD;
-				INFOPLIST_FILE = "kata-log/Info.plist";
+				INFOPLIST_FILE = "kata-log/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.monkcoder.kata-log";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,7 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4CQPKLYWJD;
-				INFOPLIST_FILE = "kata-log/Info.plist";
+				INFOPLIST_FILE = "kata-log/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +466,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.monkcoder.kata-log";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
